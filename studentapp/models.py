@@ -151,7 +151,7 @@ class Regulation(Base):
 
 if __name__ == '__main__':
     with app.app_context():
-        # db.create_all()
+        db.create_all()
 
         # import hashlib
         #
@@ -185,4 +185,4 @@ if __name__ == '__main__':
         # print(class_name.class_name)
         # print(class_name.class_size)
 
-        print(Student.query.order_by(desc(Student.id)).first())
+        # print(Student.query.order_by(desc(Student.id)).first())
